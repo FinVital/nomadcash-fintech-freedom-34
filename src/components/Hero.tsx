@@ -13,7 +13,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/a5769cde-4cad-4d78-9cf0-2f156e81a62b.png" 
                 alt="NomadCash Logo" 
-                className="h-24 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             

@@ -1,5 +1,4 @@
 
-
 import { Button } from '@/components/ui/button';
 import { Smartphone, Globe, Users } from 'lucide-react';
 
@@ -25,6 +24,16 @@ const Hero = () => {
               NomadCash is the ultimate financial companion for digital nomads, small businesses, and travelers. 
               Built with privacy, speed, and inclusion at its core.
             </p>
+            
+            {/* Added uploaded image in original size */}
+            <div className="flex justify-center lg:justify-start mb-8">
+              <img 
+                src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
+                alt="NomadCash Features" 
+                className="max-w-full h-auto"
+              />
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button 
                 size="lg" 
@@ -102,4 +111,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

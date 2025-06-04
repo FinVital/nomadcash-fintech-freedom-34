@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Smartphone, Users, Circle-dollar-sign } from 'lucide-react';
+import { Smartphone, Users, DollarSign } from 'lucide-react';
 
 const Security = () => {
   const securityFeatures = [
@@ -15,7 +15,7 @@ const Security = () => {
       description: "Automatic data wipe on logout with device management"
     },
     {
-      icon: Circle-dollar-sign,
+      icon: DollarSign,
       title: "Alternative Credit Scoring",
       description: "AI-powered assessment using transaction and mobile usage data"
     }

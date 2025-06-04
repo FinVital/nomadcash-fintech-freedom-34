@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Globe, Circle-dollar-sign, Smartphone, Bitcoin, Users, File-text } from 'lucide-react';
+import { Globe, DollarSign, Smartphone, Bitcoin, Users, FileText } from 'lucide-react';
 
 const Features = () => {
   const features = [
@@ -11,7 +11,7 @@ const Features = () => {
       highlights: ["Real-time conversions", "Transparent fees", "Location-based currency"]
     },
     {
-      icon: Circle-dollar-sign,
+      icon: DollarSign,
       title: "Smart Debit Cards",
       description: "Virtual cards with limit control, disposable cards for trials, and physical cards with secure delivery.",
       highlights: ["Virtual & Physical cards", "Biometric security", "15-min disposable cards"]
@@ -35,7 +35,7 @@ const Features = () => {
       highlights: ["Offline access", "Smart filtering", "Manual sync"]
     },
     {
-      icon: File-text,
+      icon: FileText,
       title: "Insights & Analytics",
       description: "Auto-categorized spending by region and type with visual breakdown of fees and usage patterns.",
       highlights: ["Auto-categorization", "Visual analytics", "Fee breakdown"]

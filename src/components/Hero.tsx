@@ -1,4 +1,5 @@
 
+
 import { Button } from '@/components/ui/button';
 import { Smartphone, Globe, Users } from 'lucide-react';
 
@@ -8,6 +9,14 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
+            <div className="flex items-center justify-center lg:justify-start mb-8">
+              <img 
+                src="/lovable-uploads/a5769cde-4cad-4d78-9cf0-2f156e81a62b.png" 
+                alt="NomadCash Logo" 
+                className="h-24 w-auto"
+              />
+            </div>
+            
             <h1 className="text-4xl lg:text-6xl font-poppins font-bold text-gray-800 mb-6 leading-tight">
               Welcome to the Future of{' '}
               <span className="text-primary">Borderless Finance</span>
@@ -93,3 +102,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

@@ -15,7 +15,7 @@ const Header = () => {
             <img 
               src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
               alt="NomadCash Logo" 
-              className="h-8 w-auto object-contain"
+              className="h-12 w-auto object-contain drop-shadow-sm"
             />
           </div>
 

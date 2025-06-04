@@ -7,13 +7,15 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            {/* Moved uploaded image to the top */}
+            {/* Styled uploaded image */}
             <div className="flex justify-center lg:justify-start mb-8">
-              <img 
-                src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
-                alt="NomadCash Features" 
-                className="max-w-full h-auto"
-              />
+              <div className="relative max-w-md w-full">
+                <img 
+                  src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
+                  alt="NomadCash Features" 
+                  className="w-full h-auto object-contain rounded-lg shadow-lg border border-gray-100"
+                />
+              </div>
             </div>
             
             <h1 className="text-4xl lg:text-6xl font-poppins font-bold text-gray-800 mb-6 leading-tight">

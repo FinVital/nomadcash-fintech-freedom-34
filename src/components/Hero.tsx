@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Smartphone, Globe, Users } from 'lucide-react';
 
@@ -8,11 +7,12 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
-            <div className="flex items-center justify-center lg:justify-start mb-8">
+            {/* Moved uploaded image to the top */}
+            <div className="flex justify-center lg:justify-start mb-8">
               <img 
-                src="/lovable-uploads/a5769cde-4cad-4d78-9cf0-2f156e81a62b.png" 
-                alt="NomadCash Logo" 
-                className="h-16 w-auto"
+                src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
+                alt="NomadCash Features" 
+                className="max-w-full h-auto"
               />
             </div>
             
@@ -24,15 +24,6 @@ const Hero = () => {
               NomadCash is the ultimate financial companion for digital nomads, small businesses, and travelers. 
               Built with privacy, speed, and inclusion at its core.
             </p>
-            
-            {/* Added uploaded image in original size */}
-            <div className="flex justify-center lg:justify-start mb-8">
-              <img 
-                src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
-                alt="NomadCash Features" 
-                className="max-w-full h-auto"
-              />
-            </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button 

@@ -29,25 +29,10 @@ const Contact = () => {
                   <div>
                     <p className="font-nunito text-gray-600">Email us at:</p>
                     <a 
-                      href="mailto:hello@nomadcash.io" 
+                      href="mailto:moazzamwaheed@gmail.com" 
                       className="font-poppins font-semibold text-primary hover:text-primary/80 transition-colors"
                     >
-                      hello@nomadcash.io
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center space-x-3">
-                  <span className="text-2xl">🌐</span>
-                  <div>
-                    <p className="font-nunito text-gray-600">Visit our website:</p>
-                    <a 
-                      href="http://www.nomadcash.io" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="font-poppins font-semibold text-primary hover:text-primary/80 transition-colors"
-                    >
-                      www.nomadcash.io
+                      moazzamwaheed@gmail.com
                     </a>
                   </div>
                 </div>

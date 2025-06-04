@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
@@ -9,15 +10,12 @@ const Header = () => {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img 
               src="/lovable-uploads/a5769cde-4cad-4d78-9cf0-2f156e81a62b.png" 
               alt="NomadCash Logo" 
-              className="h-16 w-auto"
+              className="h-20 w-auto"
             />
-            <h1 className="text-2xl font-poppins font-bold text-gray-800">
-              NOMADCASH
-            </h1>
           </div>
 
           {/* Desktop Navigation */}

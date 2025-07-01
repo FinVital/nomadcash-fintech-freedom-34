@@ -28,8 +28,9 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 className="font-nunito text-lg px-8 py-4 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white"
+                onClick={() => window.open('https://drive.google.com/file/d/1wE3oABKSO1np9I44uykoD3yurNsCQFSt/view?usp=sharing', '_blank')}
               >
-                Learn More
+                Watch Demo Video
               </Button>
             </div>
             
@@ -57,6 +58,25 @@ const Hero = () => {
           
           <div className="animate-slide-in-right">
             <div className="relative">
+              {/* Demo Video Section */}
+              <div className="bg-gradient-to-br from-primary to-secondary p-4 rounded-3xl shadow-2xl mb-6">
+                <div className="bg-white p-2 rounded-2xl">
+                  <iframe
+                    src="https://drive.google.com/file/d/1wE3oABKSO1np9I44uykoD3yurNsCQFSt/preview"
+                    width="100%"
+                    height="300"
+                    className="rounded-xl"
+                    allow="autoplay"
+                    title="NomadCash Demo Video"
+                  ></iframe>
+                </div>
+                <div className="text-center mt-4">
+                  <p className="font-nunito text-white text-sm">
+                    🎥 Watch our product demo
+                  </p>
+                </div>
+              </div>
+
               <div className="bg-gradient-to-br from-primary to-secondary p-8 rounded-3xl shadow-2xl">
                 <div className="bg-white p-6 rounded-2xl mb-6">
                   <h3 className="font-poppins font-bold text-gray-800 mb-4">Multi-Currency Wallet</h3>

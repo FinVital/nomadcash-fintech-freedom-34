@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Smartphone, Globe, Users } from 'lucide-react';
@@ -5,6 +6,16 @@ import GetStartedForm from './GetStartedForm';
 
 const Hero = () => {
   const [isFormOpen, setIsFormOpen] = useState(false);
+
+  const handleGetStartedClick = () => {
+    console.log('Get Started button clicked'); // Debug log
+    setIsFormOpen(true);
+  };
+
+  const handleCloseForm = () => {
+    console.log('Closing form'); // Debug log
+    setIsFormOpen(false);
+  };
 
   return (
     <>
@@ -25,7 +36,7 @@ const Hero = () => {
                 <Button 
                   size="lg" 
                   className="bg-primary hover:bg-primary/90 font-nunito text-lg px-8 py-4 rounded-full shadow-lg"
-                  onClick={() => setIsFormOpen(true)}
+                  onClick={handleGetStartedClick}
                 >
                   Get Started Today
                 </Button>
@@ -119,7 +130,7 @@ const Hero = () => {
       
       <GetStartedForm 
         isOpen={isFormOpen} 
-        onClose={() => setIsFormOpen(false)} 
+        onClose={handleCloseForm} 
       />
     </>
   );

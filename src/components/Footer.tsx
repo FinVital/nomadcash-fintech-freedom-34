@@ -7,9 +7,9 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/a5769cde-4cad-4d78-9cf0-2f156e81a62b.png" 
+                src="/lovable-uploads/bbd6e54b-06b8-4c79-8b4b-4dacd87432c9.png" 
                 alt="NomadCash Logo" 
-                className="h-8 w-auto brightness-0 invert"
+                className="h-8 w-auto"
               />
               <h3 className="text-2xl font-poppins font-bold">NOMADCASH</h3>
             </div>

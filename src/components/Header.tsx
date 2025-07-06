@@ -3,7 +3,11 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 
-const Header = () => {
+interface HeaderProps {
+  onGetStartedClick: () => void;
+}
+
+const Header = ({ onGetStartedClick }: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -31,7 +35,12 @@ const Header = () => {
 
           <div className="hidden md:flex items-center space-x-4 ml-auto">
             <Button variant="outline" className="font-nunito">Sign In</Button>
-            <Button className="bg-primary hover:bg-primary/90 font-nunito">Get Started</Button>
+            <Button 
+              className="bg-primary hover:bg-primary/90 font-nunito"
+              onClick={onGetStartedClick}
+            >
+              Get Started
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -55,7 +64,12 @@ const Header = () => {
               <a href="#contact" className="text-gray-700 hover:text-primary transition-colors font-nunito">Contact</a>
               <div className="flex flex-col space-y-2 pt-4">
                 <Button variant="outline" className="font-nunito">Sign In</Button>
-                <Button className="bg-primary hover:bg-primary/90 font-nunito">Get Started</Button>
+                <Button 
+                  className="bg-primary hover:bg-primary/90 font-nunito"
+                  onClick={onGetStartedClick}
+                >
+                  Get Started
+                </Button>
               </div>
             </div>
           </nav>

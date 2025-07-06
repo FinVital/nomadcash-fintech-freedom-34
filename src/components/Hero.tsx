@@ -1,20 +1,12 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Smartphone, Globe, Users } from 'lucide-react';
 import GetStartedForm from './GetStartedForm';
 
 const Hero = () => {
-  const [isFormOpen, setIsFormOpen] = useState(false);
-
   const handleGetStartedClick = () => {
-    console.log('Get Started button clicked'); // Debug log
-    setIsFormOpen(true);
-  };
-
-  const handleCloseForm = () => {
-    console.log('Closing form'); // Debug log
-    setIsFormOpen(false);
+    console.log('Get Started button clicked from hero'); // Debug log
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -127,11 +119,6 @@ const Hero = () => {
           </div>
         </div>
       </section>
-      
-      <GetStartedForm 
-        isOpen={isFormOpen} 
-        onClose={handleCloseForm} 
-      />
     </>
   );
 };

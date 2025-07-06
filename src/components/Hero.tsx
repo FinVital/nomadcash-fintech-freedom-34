@@ -28,7 +28,7 @@ const Hero = () => {
                 variant="outline" 
                 size="lg" 
                 className="font-nunito text-lg px-8 py-4 rounded-full border-2 border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.open('https://drive.google.com/file/d/1wE3oABKSO1np9I44uykoD3yurNsCQFSt/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://www.youtube.com/watch?v=G-pjGpgEdbk&ab_channel=MoazzamWaheed', '_blank')}
               >
                 Watch Demo Video
               </Button>
@@ -62,11 +62,12 @@ const Hero = () => {
               <div className="bg-gradient-to-br from-primary to-secondary p-4 rounded-3xl shadow-2xl mb-6">
                 <div className="bg-white p-2 rounded-2xl">
                   <iframe
-                    src="https://drive.google.com/file/d/1wE3oABKSO1np9I44uykoD3yurNsCQFSt/preview"
+                    src="https://www.youtube.com/embed/G-pjGpgEdbk"
                     width="100%"
                     height="300"
                     className="rounded-xl"
-                    allow="autoplay"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
                     title="NomadCash Demo Video"
                   ></iframe>
                 </div>
